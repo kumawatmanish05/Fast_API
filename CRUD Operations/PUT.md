@@ -13,6 +13,15 @@ If it doesn’t exist → some APIs may create it (implementation dependent).
 
 ---
 
+## Simple Language 
+
+**1st we have to made a new pydantic model because in previous model all columns are compulsary
+but in update we don't need all columns**
+
+**2nd Url ke EndPoint me 2 cheze aayegi (1)Patient_id as a path parameter and (2)Request_body jisme ye bataya jayega ki konsa column update krna h** 
+
+---
+
 ## 🧠 Simple Definition
 
 **PUT request is used to update an existing resource by sending the full updated data to the server.**

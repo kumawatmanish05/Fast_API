@@ -1,5 +1,5 @@
 
-# GET Method in FastAPI
+# GET Method 
 
 ## 📌 What is GET Method?
 The **GET method** is an HTTP request used to **retrieve (read) data** from a server.  

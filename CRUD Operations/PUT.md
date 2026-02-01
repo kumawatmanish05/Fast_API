@@ -1,4 +1,4 @@
-# PUT Method in FastAPI
+# PUT Method 
 
 ## 📌 What is PUT Method?
 
@@ -41,6 +41,9 @@ import json
 
 app = FastAPI()
 
+# Before Data
+{"P001": {"name": "Ananaya Sharma", "city": "Guwahati", "age": 28, "gender": "female", "height": 1.65, "weight": 90.0, "bmi": 33.06, "verdict": "Obesity"}
+
 # Data Model
 class patientUpdate(BaseModel):
     name:Annotated[Optional[str],Field(default=None)]
@@ -81,5 +84,8 @@ def update_patient(patient_id :str, patient_update : patientUpdate) :
     save_data(data)
 
     return JSONResponse(status_code=200,content={'message':'Patient Updated'})
+
+# After Data
+{"P001": {"name": "Mahi Rajput", "city": "Guwahati", "age": 28, "gender": "female", "height": 1.65, "weight": 90.0, "bmi": 33.06, "verdict": "Obesity"}
 
 

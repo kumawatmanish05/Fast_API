@@ -1,4 +1,4 @@
-# DELETE Method 
+# DELETE Method *
 
 ## 📌 What is DELETE Method?
 
